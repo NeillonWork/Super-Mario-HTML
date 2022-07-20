@@ -14,7 +14,7 @@
 }
 .cano{
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     width: 80px;
 
     animation-name: cano-animation;
@@ -26,13 +26,20 @@
 .mario-correndo{
     width: 150px;
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
 }
-  
 .pulo{
     animation-name: pulo;
     animation-duration: 500ms;
     animation-timing-function: ease-out;
+}
+.chao{
+    background-image: url("images/tijolo.png");
+    width: 100%;
+    height:30px;
+    position: absolute;
+    bottom: 0;
+    background-size: 30px
 }
 
 @keyframes cano-animation {
