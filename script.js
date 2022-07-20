@@ -1,5 +1,6 @@
 const mario = document.querySelector('.mario-correndo')
 const cano = document.querySelector('.cano')
+const chao = document.querySelector('.chao')
 
 const pulo = () => {
     mario.classList.add('pulo');
@@ -17,7 +18,7 @@ const repeticao = setInterval(() => {
 
     if (posicaoDoCano <= 120 && posicaoDoCano > 0 && posicaoDoMario < 80) {
 
-        //para animacao do mario
+        //para animacao do cano
         cano.style.animation = 'none';
         cano.style.left = `${posicaoDoCano}px`;
 
@@ -25,6 +26,10 @@ const repeticao = setInterval(() => {
         mario.style.animation = 'none';
         mario.style.bottom = `${posicaoDoMario}px`;
 
+        //para animacao do chão
+        chao.style.animation = 'none';
+
+        //Troca imagem para o mario morrendo
         mario.src = './images/gameOver.gif';
         mario.style.width = '75px';
         mario.style.left = '46px';

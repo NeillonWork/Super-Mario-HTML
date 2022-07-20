@@ -34,13 +34,20 @@
     animation-timing-function: ease-out;
 }
 .chao{
-    background-image: url("images/tijolo.png");
-    width: 100%;
+    background-image: url("images/tijolo02.png");
+    width: 9999%;
     height:30px;
     position: absolute;
     bottom: 0;
-    background-size: 30px
+    background-size: 110px;
+    background-repeat: x;
+
+    animation-name: chao;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
 
 @keyframes cano-animation {
     from {right: -80px;}
@@ -60,4 +67,11 @@
     100% {bottom: 0;}
   }
 
-
+@keyframes chao {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-800px);
+    }
+}
