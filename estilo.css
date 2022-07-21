@@ -6,9 +6,7 @@
 }
 
 .game-board{
-    display:flex;
-    flex-direction: column;  
-    
+    display:flex;  
     width: 100%;
     max-height: 95vh;
     margin: 0 auto;
@@ -16,6 +14,28 @@
     overflow: hidden;
     background: linear-gradient(#87CEEB, #E0F6FF);
     border: 2px solid red;
+}
+.conteudo{
+    display:none;
+    width:100%;
+    max-height: 95vh;
+    justify-content:center;
+    position: absolute;
+    background: purple;
+    
+}
+.bem-vindo{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    max-width: 1100px;
+    justify-content: center;
+    align-items:center;
+
+    margin-top: 24px;
+
+    background: blue;
+    
 }
 .cano{
     position: absolute;

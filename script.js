@@ -2,6 +2,7 @@ const mario = document.querySelector('.mario-correndo')
 const cano = document.querySelector('.cano')
 const chao = document.querySelector('.chao')
 const planice = document.querySelector('.planice')
+const conteudo = document.querySelector('.conteudo')
 
 const nuvens01 = document.querySelector('.nuvens-01')
 const nuvens02 = document.querySelector('.nuvens-02')
@@ -72,6 +73,10 @@ const repeticao = setInterval(() => {
         mario.src = './images/gameOver.gif';
         mario.style.width = '75px';
         mario.style.left = '46px';
+
+
+        conteudo.style.display = 'flex';
+        console.log(conteudo);
 
         clearInterval(repeticao);
 
