@@ -259,14 +259,14 @@ footer a:hover {
   h1.logo {
     border: 4px solid green;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
 
     font-size: 2em;
     color: white;
     font-family: 'SuperMario256', sans-serif;
     -webkit-text-stroke: 2px #000000;
     text-shadow: 0 0 10px #000000;
-    display: none;
   }
   span.azul {
     font-size: 2.2em;
