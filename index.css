@@ -383,7 +383,6 @@ footer a:hover {
   }
 
   footer {
-    border: 4px solid pink;
     display: flex;
     flex-direction: column;
     align-items: center;
