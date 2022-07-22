@@ -6,6 +6,7 @@ https://www.cufonfonts.com/font/super-mario-256
   font-family: 'SuperMario256';
   src: url('./fonts/SuperMario256.ttf') format('truetype');
 }
+
 * {
   margen: 0;
   padding: 0;
@@ -20,6 +21,7 @@ body {
   font-family: 'Roboto Mono', monospace;
   background-color: #54585a;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -30,6 +32,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .conteudo {
   display: flex;
   //align-items: center;
@@ -137,11 +140,43 @@ div.audio audio {
   width: 99%;
   height: 99%;
 
-  background-image: url('images/pixel-jeff-mario.gif');
+  background-image: url('images/crt.gif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  opacity: 0.7;
   filter: blur(8px);
   -webkit-filter: blur(8px);
+  border-radius: 7% 7% 7% 7%;
+}
+
+.nostalgia-body2 {
+  position: absolute;
+  z-index: -1;
+  width: 99%;
+  height: 99%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(4px);
+  border-radius: 7% 7% 7% 7%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInNostalgia {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
 }
