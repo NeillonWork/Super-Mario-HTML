@@ -2,6 +2,7 @@ const nostalgia  = document.querySelector('#audioId');
 const backImage  = document.querySelector('#bgNostalgia');
 const backImage2 = document.querySelector('#bgNostalgia2');
 const body       = document.querySelector('body');
+//const gameboyTela = document.querySelector('.jogar');
 
 function playNostalgia(){
     nostalgia.style.display= ('flex')
@@ -20,6 +21,8 @@ backImage2.style.backgroundRepeat=   ('no-repeat');
 backImage2.style.backgroundSize=     ('cover');
 backImage2.style.animation =         ('fadeIn 25s');
 backImage.style.animation =         ('fadeInNostalgia 3s');
+
+//gameboyTela.style.backgroundColor = ('Transparent');
 
 }
 
