@@ -113,11 +113,9 @@ span.verde {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  padding: 0.1rem;
-  gap: 1rem;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 45%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 
   border-radius: 2rem;
   background-color: #a7a4e0;
@@ -130,10 +128,11 @@ span.verde {
   opacity: 1;
 }
 .botoes {
-  width: 89%;
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  width: 100%;
+  gap: 10px;
+
   background-color: #707372;
   border-radius: 3rem;
   padding: 1rem;
@@ -306,14 +305,10 @@ footer a:hover {
   .buttom-jogar {
     border: 4px solid purple;
     width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    padding: 0.1rem;
-    gap: 1rem;
-    padding-left: 50px;
-    padding-right: 50px;
 
     border-radius: 2rem;
     background-color: #a7a4e0;
@@ -326,16 +321,12 @@ footer a:hover {
     opacity: 1;
   }
   .botoes {
-    border: 4px solid yellow;
-    width: 89%;
     display: flex;
-    justify-content: center;
-    gap: 1rem;
-    background-color: #707372;
-    border-radius: 3rem;
-    padding: 1rem;
+    flex-direction: column;
 
-    display: none;
+    border: 4px solid yellow;
+    background-color: #707372;
+    border-radius: 0.5rem;
   }
   .controle-esquerda {
     display: none;
