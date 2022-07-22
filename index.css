@@ -91,9 +91,9 @@ span.verde {
   color: #44af35;
 }
 .jogar {
-  width: 100%;
-  max-width: 800px;
   display: flex;
+  width: 100%;
+
   margin-top: 9px;
   margin-bottom: 30px;
 
@@ -285,10 +285,10 @@ footer a:hover {
     color: #44af35;
   }
   .jogar {
-    border: 4px solid gray;
-    width: 100%;
-    max-width: 800px;
     display: flex;
+    width: 100%;
+    border: 4px solid orange;
+
     margin-top: 9px;
     margin-bottom: 30px;
 
