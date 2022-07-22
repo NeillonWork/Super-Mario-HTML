@@ -1,50 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto desenvolvido por Neillon Almeida - Front End">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/60415245?v=4" />
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="./estilo.css">
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
 
-    <title>Mario HTML</title>
+    <title>Mario - Html</title>
 </head>
 
-<body>
-    <main>
-        <div class="game-board">
-            <!-- Seção do Game -->
-            <section>
-                <div class="planice">&nbsp;</div>
-                <img class="mario-correndo" src="./images/marioCorrendo.gif" />
-                <img class="cano" src="./images/cano.png" />
-                <div class="chao">&nbsp;</div>
-                <div class="nuvens">
-                    <img class="nuvens-01" src="./images/nuvens.png" alt="">
-                    <img class="nuvens-02" src="./images/nuvens02.png" alt="">
-                    <img class="nuvens-03" src="./images/nuvens03.png" alt="">
-                    <img class="nuvens-04" src="./images/nuvens03.png" alt="">
-                    <img class="nuvens-05" src="./images/nuvens02.png" alt="">
-                </div>
-            </section>
-
-            <!-- Seção Portfolio -->
+<body class="">
+    <div id="bgNostalgia" class=""></div>
+    <div class="container">
+        <main>
             <section>
                 <div class="conteudo">
-                    <div class="bem-vindo">
-                        <span>Bem vindo ao Portfolio,</span>
-                        <h1>NellonWork</h1>
+                    <div class="controle-esquerda">
+                        <img src="./images/controleEsquerda.png" alt="">
+                    </div>
+                    <div class="jogar">
+                        <h1 class="logo">
+                           <span class="azul">S</span>
+                           <span class="amarelo">U</span>
+                           <span class="vermelho">P</span> 
+                           <span class="verde">E</span>
+                           <span class="amarelo">R</span>
+                           <span>&nbsp;</span>
+                           <span class="vermelho">M</span>
+                           <span class="verde">A</span>
+                           <span class="amarelo">R</span>
+                           <span class="azul">I</span>
+                           <span class="verde">O</span> 
+                           <span>&nbsp;HTML</span>  
+                        </h1> 
+                        
+                        <div class="botoes">
+                            <a class="buttom-jogar" href="game.html">
+                                PLAY
+                            </a>
+                            <button class="buttom-jogar" onclick="playNostalgia()">
+                                NOSTALGIA
+                            </button>
+                        </div>
+
+                        <div class="audio">
+                            <audio id="audioId" preload="metadata" autoplay loop controls> 
+                                <source src="./audio/index.mp3" type="audio/mp3" />
+                                <source src="./audio/index.mp3" type="audio/mpeg" />
+                                <source src="./audio/index.mp3" type="audio/ogg" />
+                            </audio>
+                        </div>
+
+                    </div>
+                    <div class="controle-direita">
+                        <img src="./images/controleDireita.png" alt="">
                     </div>
                 </div>
             </section>
-        </div>
-        <footer>
-            <span>Em desenvolvimento</span>
-        </footer>
-
-    </main>
+        </main>
+    </div>
 </body>
 
 </html>
