@@ -74,13 +74,6 @@ const repeticao = setInterval(() => {
         mario.src = './images/gameOver.gif';
         mario.style.width = '75px';
         mario.style.left = '46px';
-
-
-    //    scoreCountt = scoreCountt + 1;
-
-    //   document.getElementById("counterspan").innerHTML = scoreCountt;
-    //   console.log(scoreCountt);
-
         clearInterval(repeticao);
 
 
@@ -96,5 +89,4 @@ const repeticao = setInterval(() => {
 
 
 document.addEventListener('keydown', pulo); 
-
 document.addEventListener('click', pulo);
