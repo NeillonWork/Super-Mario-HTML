@@ -86,3 +86,5 @@ const repeticao = setInterval(() => {
 
 
 document.addEventListener('keydown', pulo); 
+
+document.addEventListener('click', pulo);
