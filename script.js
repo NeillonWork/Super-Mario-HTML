@@ -68,7 +68,9 @@ const repeticao = setInterval(() => {
         nuvens05.style.animation = 'none';
 
         //Troca imagem para o mario morrendo
-        mario.src = './images/gameOver.gif';
+      //  mario.src = './images/gameOver.gif';
+
+      mario.src = './images/gameOver.png';
         mario.style.width = '75px';
         mario.style.left = '46px';
 
