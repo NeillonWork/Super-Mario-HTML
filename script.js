@@ -3,6 +3,7 @@ const cano = document.querySelector('.cano')
 const chao = document.querySelector('.chao')
 const planice = document.querySelector('.planice')
 const conteudo = document.querySelector('.conteudo')
+let scoreCountt = 0;
 
 const nuvens01 = document.querySelector('.nuvens-01')
 const nuvens02 = document.querySelector('.nuvens-02')
@@ -75,11 +76,20 @@ const repeticao = setInterval(() => {
         mario.style.left = '46px';
 
 
-        conteudo.style.display = 'flex';
-        console.log(conteudo);
+    //    scoreCountt = scoreCountt + 1;
+
+    //   document.getElementById("counterspan").innerHTML = scoreCountt;
+    //   console.log(scoreCountt);
 
         clearInterval(repeticao);
 
+
+
+    } else{
+        scoreCountt = scoreCountt + 1;
+
+        document.getElementById("counterspan").innerHTML = scoreCountt;
+        console.log(scoreCountt);
     }
 
 }, 10);
