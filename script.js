@@ -32,6 +32,8 @@ const repeticao = setInterval(() => {
     const posicaoDoMario = +window.getComputedStyle(mario).bottom.replace('px', '');
 
     if (posicaoDoCano <= 120 && posicaoDoCano > 0 && posicaoDoMario < 80) {
+debugger
+        mario.src = '';
 
         //para animacao do cano
         cano.style.animation = 'none';
@@ -70,7 +72,7 @@ const repeticao = setInterval(() => {
         //Troca imagem para o mario morrendo
       //  mario.src = './images/gameOver.gif';
 
-      mario.src = './images/gameOver.png';
+        mario.src = './images/gameOver.png';
         mario.style.width = '75px';
         mario.style.left = '46px';
 
