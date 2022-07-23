@@ -20,16 +20,13 @@ const pulo = () => {
 }
 
 const repeticao = setInterval(() => {
-
-    const posicaoDoCano = cano.offsetLeft;
+    const posicaoDoCano = cano.offsetLeft;    
 
     const posicaoDaNuvem01 = nuvens01.offsetLeft;
     const posicaoDaNuvem02 = nuvens02.offsetLeft;
     const posicaoDaNuvem03 = nuvens03.offsetLeft;
     const posicaoDaNuvem04 = nuvens04.offsetLeft;
     const posicaoDaNuvem05 = nuvens05.offsetLeft;
-
-
 
     //computa a posicao bottom do mario ao longo do pulo, o sinal de + esta convertendo a string para number
     const posicaoDoMario = +window.getComputedStyle(mario).bottom.replace('px', '');
@@ -74,18 +71,17 @@ const repeticao = setInterval(() => {
         mario.src = './images/gameOver.gif';
         mario.style.width = '75px';
         mario.style.left = '46px';
+
+
         clearInterval(repeticao);
-
-
-
-    } else{
-        scoreCountt = scoreCountt + 1;
-
-        document.getElementById("counterspan").innerHTML = scoreCountt;
-        console.log(scoreCountt);
     }
 
+    scoreCountt = scoreCountt + 1;
+    document.getElementById("counterspan").innerHTML = scoreCountt;
+    console.log(scoreCountt);
+
 }, 10);
+
 
 
 document.addEventListener('keydown', pulo); 
