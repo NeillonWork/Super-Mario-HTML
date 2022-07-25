@@ -3,6 +3,7 @@ const cano = document.querySelector('.cano')
 const chao = document.querySelector('.chao')
 const planice = document.querySelector('.planice')
 const conteudo = document.querySelector('.conteudo')
+const reset = document.querySelector('.reset')
 let scoreCountt = 0;
 
 const dead = document.querySelector('#audioIdGame')
@@ -79,6 +80,7 @@ const repeticao = setInterval(() => {
         mario.style.width = '75px';
         mario.style.left = '46px';
 
+        reset.style.display= ('flex');
 
         clearInterval(repeticao);
     }

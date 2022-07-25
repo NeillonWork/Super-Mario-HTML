@@ -232,6 +232,21 @@ footer a:hover {
 .gitlogo {
   max-width: 24px;
 }
+
+.reset {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+}
+.reset img {
+  height: 150px;
+  opacity: 0.6;
+}
+.reset img:hover {
+  opacity: 1;
+}
+
 @keyframes cano-animation {
   from {
     right: -80px;
@@ -481,6 +496,12 @@ footer a:hover {
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+  }
+  .reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
   }
 
   @keyframes cano-animation {
