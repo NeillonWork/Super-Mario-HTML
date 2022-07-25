@@ -5,6 +5,8 @@ const planice = document.querySelector('.planice')
 const conteudo = document.querySelector('.conteudo')
 let scoreCountt = 0;
 
+const dead = document.querySelector('#audioIdGame')
+
 const nuvens01 = document.querySelector('.nuvens-01')
 const nuvens02 = document.querySelector('.nuvens-02')
 const nuvens03 = document.querySelector('.nuvens-03')
@@ -26,13 +28,14 @@ const repeticao = setInterval(() => {
     const posicaoDaNuvem02 = nuvens02.offsetLeft;
     const posicaoDaNuvem03 = nuvens03.offsetLeft;
     const posicaoDaNuvem04 = nuvens04.offsetLeft;
-    const posicaoDaNuvem05 = nuvens05.offsetLeft;
+    const posicaoDaNuvem05 = nuvens05.offsetLeft; 
 
     //computa a posicao bottom do mario ao longo do pulo, o sinal de + esta convertendo a string para number
     const posicaoDoMario = +window.getComputedStyle(mario).bottom.replace('px', '');
 
     if (posicaoDoCano <= 120 && posicaoDoCano > 0 && posicaoDoMario < 80) {
-debugger
+
+              dead.src="./audio/Mario Dead.mp3"
         mario.src = '';
 
         //para animacao do cano
@@ -86,7 +89,23 @@ debugger
 
 }, 10);
 
+document.addEventListener('click', audioGame);
+document.addEventListener('keydown', audioGame); 
+
+function audioGame (){
+
+    audioIdGame.play();
+    audioIdPulo.play();
+
+    if (posicaoDoCano <= 120 && posicaoDoCano > 0 && posicaoDoMario < 80) {
+
+        audioIdGame.stop();
+        //adicionar o audio de DEAD aqui dentro
+    }
+
+}
 
 
 document.addEventListener('keydown', pulo); 
 document.addEventListener('click', pulo);
+

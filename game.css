@@ -296,7 +296,7 @@ Support URL             : http://www.9031.com/
     max-height: 95vh;
     justify-content: center;
     position: absolute;
-    //  background: purple;
+    //  background: purple;z
   }
   .score {
     font-family: 'Arcade Rounded';
