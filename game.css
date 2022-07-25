@@ -567,6 +567,20 @@ footer a:hover {
     max-width: 24px;
   }
 
+  .reset {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+  }
+  .reset img {
+    height: 150px;
+    opacity: 0.6;
+  }
+  .reset img:hover {
+    opacity: 1;
+  }
+
   @keyframes chao {
     from {
       transform: translateX(0px);
