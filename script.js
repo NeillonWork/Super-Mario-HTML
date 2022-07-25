@@ -87,6 +87,26 @@ const repeticao = setInterval(() => {
     document.getElementById("counterspan").innerHTML = scoreCountt;
     console.log(scoreCountt);
 
+    const bonus = document.querySelector('.bonus');
+    const bonusIMG = document.querySelector('.bonus');
+
+if( scoreCountt == 500){    
+        dead.src="./audio/wow.mp3";
+        bonus.style.display = ('flex');
+
+    }else if ( scoreCountt == 600){   
+        dead.src="./audio/game.mp3";
+        bonus.style.display = ('none');
+
+    }else if ( scoreCountt == 2000){  
+        dead.src="./audio/bambam.mp3";
+
+    }else if ( scoreCountt == 2500){   
+        dead.src="./audio/game.mp3";
+        bonus.style.display = ('none');
+    }else{}
+
+
 }, 10);
 
 document.addEventListener('click', audioGame);
