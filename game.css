@@ -43,9 +43,10 @@ Support URL             : http://www.9031.com/
 }
 .conteudo {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   max-height: 95vh;
-  justify-content: center;
   position: absolute;
   // background: purple;
 }
@@ -54,11 +55,9 @@ Support URL             : http://www.9031.com/
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1100px;
+  //max-width: 1100px;
   justify-content: center;
   align-items: center;
-
-  margin-top: 24px;
 
   margin-top: 24px;
   color: white;
@@ -189,6 +188,17 @@ Support URL             : http://www.9031.com/
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+.bonus {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  // max-width: 1100px;
+  justify-content: center;
+  align-items: center;
+}
+.audio {
+  display: none;
+}
 
 @keyframes cano-animation {
   from {
@@ -303,7 +313,7 @@ Support URL             : http://www.9031.com/
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1100px;
+    // max-width: 1100px;
     justify-content: center;
     align-items: center;
 
