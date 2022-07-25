@@ -35,7 +35,7 @@ const repeticao = setInterval(() => {
 
     if (posicaoDoCano <= 120 && posicaoDoCano > 0 && posicaoDoMario < 80) {
 
-              dead.src="./audio/Mario Dead.mp3"
+        dead.src="./audio/Mario Dead.mp3"
         mario.src = '';
 
         //para animacao do cano
@@ -96,13 +96,6 @@ function audioGame (){
 
     audioIdGame.play();
     audioIdPulo.play();
-
-    if (posicaoDoCano <= 120 && posicaoDoCano > 0 && posicaoDoMario < 80) {
-
-        audioIdGame.stop();
-        //adicionar o audio de DEAD aqui dentro
-    }
-
 }
 
 
