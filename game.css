@@ -39,7 +39,7 @@ Support URL             : http://www.9031.com/
   position: relative;
   overflow: hidden;
   background: linear-gradient(#87ceeb, #e0f6ff);
-  border: 2px solid red;
+  border: 2px solid gray;
 }
 .conteudo {
   display: flex;
@@ -199,7 +199,39 @@ Support URL             : http://www.9031.com/
 .audio {
   display: none;
 }
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
+  margin-top: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  opacity: 0.5;
+  transition: 400ms;
+
+  color: #cccccc;
+  font-family: 'Arcade Rounded', sans-serif;
+}
+footer a {
+  color: #44af35;
+}
+
+footer a:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+.rodape {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  gap: 10px;
+}
+
+.gitlogo {
+  max-width: 24px;
+}
 @keyframes cano-animation {
   from {
     right: -80px;
@@ -298,7 +330,8 @@ Support URL             : http://www.9031.com/
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87ceeb, #e0f6ff);
-    border: 2px solid red;
+    border: 2px solid gray;
+    border-radius: 5%;
   }
   .conteudo {
     display: flex;
@@ -475,6 +508,39 @@ Support URL             : http://www.9031.com/
     100% {
       bottom: 0;
     }
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 24px;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0.5;
+    transition: 400ms;
+
+    color: #cccccc;
+    font-family: 'Arcade Rounded', sans-serif;
+  }
+  footer a {
+    color: #44af35;
+  }
+
+  footer a:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
+  .rodape {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    gap: 10px;
+  }
+
+  .gitlogo {
+    max-width: 24px;
   }
 
   @keyframes chao {
