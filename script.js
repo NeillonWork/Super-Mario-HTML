@@ -98,14 +98,12 @@ if( scoreCountt == 100){
         dead.src="./audio/wow.mp3";
         bonus.style.display = ('flex');
 
-
     }else if ( scoreCountt == 600){   
         dead.src="./audio/game.mp3";
         bonus.style.display = ('none');
 
     }else if ( scoreCountt == 2000){  
         dead.src="./audio/bambam.mp3";
-     //   cano.style.animationDuration = ('0.5s');
 
     }else if ( scoreCountt == 2500){   
         bonus.style.display = ('none');
@@ -120,7 +118,6 @@ if( scoreCountt == 100){
       gameBoard.style.bottom =('');
       gameBoard.style.opacity =('1');
 
-      
       //fundo da pagina (BODY do navegador)
       body.style.backgroundImage = "url('images/telaFuria2.gif')";
       body.style.backgroundRepeat = ('no-repeat');
@@ -161,7 +158,6 @@ function audioGame (){
     audioIdGame.play();
     audioIdPulo.play();
 }
-
 
 document.addEventListener('keydown', pulo); 
 document.addEventListener('click', pulo);
