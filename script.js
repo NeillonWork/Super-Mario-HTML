@@ -94,7 +94,7 @@ const repeticao = setInterval(() => {
     const bonus = document.querySelector('.bonus');
     const bonusIMG = document.querySelector('.bonus');
 
-if( scoreCountt == 100){    
+if( scoreCountt == 500){    
         dead.src="./audio/wow.mp3";
         bonus.style.display = ('flex');
 
