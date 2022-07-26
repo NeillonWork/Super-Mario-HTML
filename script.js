@@ -4,6 +4,8 @@ const chao = document.querySelector('.chao')
 const planice = document.querySelector('.planice')
 const conteudo = document.querySelector('.conteudo')
 const reset = document.querySelector('.reset')
+const body = document.querySelector('body')
+const gameBoard = document.querySelector('.game-board')
 let scoreCountt = 0;
 
 const dead = document.querySelector('#audioIdGame')
@@ -92,9 +94,10 @@ const repeticao = setInterval(() => {
     const bonus = document.querySelector('.bonus');
     const bonusIMG = document.querySelector('.bonus');
 
-if( scoreCountt == 500){    
+if( scoreCountt == 100){    
         dead.src="./audio/wow.mp3";
         bonus.style.display = ('flex');
+
 
     }else if ( scoreCountt == 600){   
         dead.src="./audio/game.mp3";
@@ -102,10 +105,49 @@ if( scoreCountt == 500){
 
     }else if ( scoreCountt == 2000){  
         dead.src="./audio/bambam.mp3";
+     //   cano.style.animationDuration = ('0.5s');
 
     }else if ( scoreCountt == 2500){   
-        dead.src="./audio/game.mp3";
         bonus.style.display = ('none');
+
+        dead.src="./audio/dark.mp3";
+        
+      //fundo do jogo
+      gameBoard.style.backgroundImage = "url('images/telaFuria2.gif')";
+      gameBoard.style.backgroundRepeat = ('no-repeat');
+      gameBoard.style.backgroundSize = ('cover');
+      gameBoard.style.width = ('100%');
+      gameBoard.style.bottom =('');
+      gameBoard.style.opacity =('1');
+
+      
+      //fundo da pagina (BODY do navegador)
+      body.style.backgroundImage = "url('images/telaFuria2.gif')";
+      body.style.backgroundRepeat = ('no-repeat');
+      body.style.backgroundSize = ('cover');
+      body.style.width = ('100%');
+
+      //Imagem do Bowser
+      planice.style.animation = ('none');
+      planice.style.animation =         ('fadeIn 3s');
+      planice.style.backgroundImage = "url('images/bowser-dark.png')";
+      planice.style.backgroundRepeat = ('no-repeat');
+      planice.style.backgroundSize = ('cover');
+      planice.style.width = ('100%');
+      planice.style.bottom =('');
+      planice.style.opacity =('0.9');
+
+      nuvens01.src = './images/bowser.gif';
+      nuvens01.style.width = ('200px');
+      nuvens01.style.animationDuration = ('25s');
+
+      nuvens02.src = './images/fantasma.gif';
+      nuvens03.src = './images/fantasma.gif';
+      nuvens04.src = './images/fantasma.gif';
+      nuvens05.src = './images/fantasma.gif';
+
+      cano.src = './images/planta.gif';
+
     }else{}
 
 

@@ -335,6 +335,14 @@ footer a:hover {
     right: 100%;
   }
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media (min-width: 100px) and (max-width: 992px) {
   body {
@@ -637,6 +645,14 @@ footer a:hover {
     }
     to {
       right: 100%;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }
