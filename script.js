@@ -105,7 +105,7 @@ if( scoreCountt == 500){
     }else if ( scoreCountt == 2000){  
         dead.src="./audio/bambam.mp3";
 
-    }else if ( scoreCountt == 2500){   
+    }else if ( scoreCountt == 1000){   
         bonus.style.display = ('none');
 
         dead.src="./audio/dark.mp3";
