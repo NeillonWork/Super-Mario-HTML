@@ -20,13 +20,18 @@
 
 <table>
   <tr>
-    <td>Desktop - Arvore de link</td>
-    <td>Mobile - Arvore de link</td>
+    <td>Desktop - Controle SNES</td>
+    <td>Mobile - GAMEBOY</td>
+    <td>Cor - titulo</td>
+    <td>Estilo, referencias</td>
   </tr>
   <tr>
+    <td valign="top"><img src="./images/Desktop.png"></td>
+    <td valign="top"><img src="./images/Mobile.png"></td>  
     <td valign="top"><img src="./images/logoEstilo.png"></td>
     <td valign="top"><img src="./images/cores.png"></td>
   </tr>
+
  </table>
 
 # Sobre
