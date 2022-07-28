@@ -34,7 +34,7 @@
 
   <tr>
     <td valign="top"><img src="./images/Desktop.png"></td>
-    <td valign="top"><img src="./images/Mobile.png"></td>  
+    <td valign="top"><img src="./images/mobile.png"></td>  
     <td valign="top"><img src="./images/logoEstilo.png"></td>
     <td valign="top"><img src="./images/cores.png"></td>
   </tr>
