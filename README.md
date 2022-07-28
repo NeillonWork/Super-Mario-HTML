@@ -19,12 +19,19 @@
 </p>
 
 <table>
+ <tr>
+ Tela inicial _ responsividade
+ </tr>
+   <tr>
+     <td valign="top"><img src="./images/animacao.gif"></td>
+  </tr>
   <tr>
     <td>Desktop - Controle SNES</td>
     <td>Mobile - GAMEBOY</td>
     <td>Cor - titulo</td>
     <td>Estilo, referencias</td>
   </tr>
+
   <tr>
     <td valign="top"><img src="./images/Desktop.png"></td>
     <td valign="top"><img src="./images/Mobile.png"></td>  
